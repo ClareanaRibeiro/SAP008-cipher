@@ -32,32 +32,6 @@ function decifrar (e) {
 
 
 
-//Dúvidas:
-//1) console.log > ir na pag e inspecionar - console - 
-//essa melhor maneira?
-//2) Cód tá certo? O botao decodificar não está funcionando. Se sim:
-//   - dica p/ qual proxima etapa p criar o chiper.encode?
-
-
-
-
-
-
-
-
-
-//Codigo da Isabella adaptado ao meu
-//const botaoDecifrar = document.getElementById("decodifica");
-
-//botaoDecifrar.addEventListener ("click", function(e){
-
- // e.preventDefault();
-
- // let valorDeslocamento = document.getElementById("numero").value
- // let valorMsg = document.getElementById("msg").value
- // let resultado = chiper.decode(valorDeslocamento,valorMsg)
-//})
-
 
 //cod feito com a Thali
 //const botaoNumero = document.getElementById("botao_enviar") = não existe mais esse botao
