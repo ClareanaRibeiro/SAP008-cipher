@@ -1,19 +1,17 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
-
 const botaoCifrar = document.getElementById("codifica");
 
 botaoCifrar.addEventListener ("click",cifrar); 
 
 function cifrar (e) {
-  let valorDeslocamento = document.getElementById("numero").value;
+  let valorDeslocamento = parseInt(document.getElementById("numero").value);
   let valorMsg = document.getElementById("msg").value; 
+  valorMsg = valorMsg.toUpperCase();
   let resultado = cipher.encode(valorDeslocamento,valorMsg);
   e.preventDefault();
   
-  console.log(resultado);
+document.getElementById("resultado").innerText = resultado; 
 
 };
 
@@ -22,37 +20,17 @@ const botaoDecifrar = document.getElementById("decodifica");
 botaoDecifrar.addEventListener ("click",decifrar);
 
 function decifrar (e) {
-  let valorDeslocamento = document.getElementById("numero").value;
-  let valorMsg = document.getElementById("msg").value; 
-  let resultado = ciphertwo.decocode(valorDeslocamento,valorMsg);
+  let valorDeslocamento = parseInt(document.getElementById("numero").value);
+  let valorMsg = document.getElementById("msg").value;
+  valorMsg = valorMsg.toUpperCase();
+  let resultado = cipher.decode(valorDeslocamento,valorMsg);
   e.preventDefault();
-  
-  console.log(resultado);
+
+  document.getElementById("resultado").innerText = resultado;
+
 };
 
-
-
-
-//cod feito com a Thali
-//const botaoNumero = document.getElementById("botao_enviar") = não existe mais esse botao
-
-//function clicar() {
-  //let numeroDeslocamento = document.getElementById("numero")
-  //alert(numeroDeslocamento.value)
-   //}
-
-//botaoNumero.addEventListener("click", clicar)
-
-
-
-
 //Minha primeira resolução usando onclick=funcao() no html e desenvolvendo a funcao no js
-
-// document.getElementById("botao_enviar").onclick = function  clicar() {
-//     const botao_1 = document.getElementById("numero") = esse botao não existe mais
-//     const numero_deslocamento = Number (botao_1.value)
-//     alert(numero_deslocamento) //criei esse alert só p ver se salvou o conteudo do q foi inserido no input
-// }
 
 // document.getElementById("codifica").onclick = function codificar() {
 //   const mensagem_codificar = document.getElementById("msg")
