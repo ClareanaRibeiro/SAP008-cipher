@@ -37,10 +37,14 @@ mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 
+
+
 ## 2. Objetivo do projeto
 
 Este projeto tem como objetivo o fornecimento de uma ferramenta rápida codificadora/decodificadora de mensagens, que permite que o usuário tenha sua mensagem cifrada ou decifrada de forma simples e rápida. 
 Voltado para pessoas que desejam se comunicar entre si sem que terceiros entendam.
+
+
 
 
 ## 3. Interface com o usuário
@@ -51,6 +55,8 @@ A interface permite ao usuário:
   quer que a cifra utilize.
 * Inserir uma mensagem (texto) para ser cifrada ou decifrada.
 * Ver o resultado da mensagem cifrada ou decifrada.
+
+
 
 
 ## 4. Definição de layout

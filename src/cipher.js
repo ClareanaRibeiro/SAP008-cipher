@@ -23,7 +23,7 @@ function decode(offset,string){
     texto += String.fromCharCode(processo);
   }
 
-    return texto;
+  return texto;
 
   };
 
