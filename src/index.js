@@ -13,7 +13,7 @@ function cifrar (e) {
   
 document.getElementById("resultado").innerText = resultado; 
 
-};
+}
 
 const botaoDecifrar = document.getElementById("decodifica");
 
@@ -27,4 +27,4 @@ function decifrar (e) {
 
   document.getElementById("resultado").innerText = resultado;
 
-};
+}

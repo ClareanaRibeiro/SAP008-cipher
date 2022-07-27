@@ -11,7 +11,7 @@ function encode(offset, string){
 
   return texto;
   
-  };
+  }
 
 
 function decode(offset,string){
@@ -19,13 +19,13 @@ function decode(offset,string){
   let texto = "";
 
   for (let c=0; c<string.length; c++){
-    let processo= ((string.charCodeAt(c)-65-offset)%26)+65; 
+    let processo= ((string.charCodeAt(c)-90-offset)%26)+90; 
     texto += String.fromCharCode(processo);
   }
 
   return texto;
 
-  };
+  }
 
 export default cipher;
 
