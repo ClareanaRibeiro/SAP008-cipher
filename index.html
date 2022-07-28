@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cifra de Cesar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="inicial">
+      <h1><strong>PROGRAMA RÁPIDO CODIFICADOR E DECODIFICADOR DE MENSAGENS</strong></h1>
+      <p>Para você que deseja trocar mensagens com alguém sem que terceiros entendam.<br>
+        Basta definir um número que será o deslocamento das letras e assim formará uma espécie de senha.
+        <br>Digite sua mensagem e pressione o botão para codificar ou decodificá-la.
+      </p>
+    </div>
+    <div id="formulario">
+      <div id="deslocamento">
+        <h2>Digite o número de deslocamento/senha:<input placeholder="Nº" type="number" id="numero" value=""
+            min="1" max="20"></h2>
+      </div>
+      <div id="mensagem">
+        <h2>Digite a mensagem:</h2>
+        <input placeholder="Escreva aqui" type="text" id="msg" value="">
+      </div>
+      <div id="botoes">
+        <button id="codifica" value=""><strong>CODIFICAR</strong></button>
+        <button id="decodifica" value=""><strong>DECODIFICAR</strong></button>
+      </div>
+      <div id="resultado">
+        <output placeholder="Resultado" id="traducao" type="text"></output>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
